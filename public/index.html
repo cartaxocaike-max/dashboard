@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7fb">
+  <meta name="description" content="Dashboard interativo para explorar faturamento e vendas por período, categoria e região.">
+  <title>Visão de vendas | Hamburgueria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.7.0/papaparse.min.js"></script>
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Visão de vendas, início">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 13.2c0-3 3.58-5.45 8-5.45s8 2.45 8 5.45H4Z"/><path d="M5.1 15.5h13.8M6 18.2h12M7 5.5l.5.5m4-2 .5.8m4.2.5.5-.5"/></svg>
+        </span>
+        <span class="brand-name">Ponto<span> &amp; Brasa</span></span>
+      </a>
+      <div class="topbar-note"><span class="live-dot"></span> Análise exploratória de vendas</div>
+    </header>
+
+    <main id="inicio" class="dashboard">
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">FUNDAMENTOS DE IA E ANÁLISE DE DADOS</p>
+          <h1 id="page-title">Visão de vendas</h1>
+          <p class="hero-copy">Do primeiro pedido ao último: explore o faturamento por mês, categoria e região.</p>
+        </div>
+        <div class="hero-aside">
+          <svg class="hero-burger" viewBox="0 0 190 145" role="img" aria-label="Ilustração de um hambúrguer artesanal">
+            <ellipse cx="98" cy="128" rx="77" ry="10" fill="#ead9c6"/>
+            <path d="M36 101c3 13 16 20 31 20h62c16 0 29-8 32-20H36Z" fill="#e8a24b"/>
+            <path d="M35 98c0-4 4-7 9-7h111c5 0 9 3 9 7v5H35v-5Z" fill="#6a3927"/>
+            <path d="M38 91c8-9 12 5 21-3 9-8 13 5 23-2 9-8 14 5 23-2 10-8 14 6 23-2 10-7 15 5 24-2 7-6 12 0 14 5l-3 8H39l-1-2Z" fill="#72a85d"/>
+            <path d="M40 82h119l-8 9H48l-8-9Z" fill="#d45d42"/>
+            <path d="M54 81 67 62h57l29 19-8 7H61l-7-7Z" fill="#f1bd47"/>
+            <path d="M33 69c0-25 27-45 63-45s63 20 63 45c0 4-2 7-7 7H40c-5 0-7-3-7-7Z" fill="#dfa04d"/>
+            <path d="M33 69c0-25 27-45 63-45s63 20 63 45" fill="none" stroke="#c78337" stroke-width="2"/>
+            <g fill="#fff0c8"><ellipse cx="72" cy="42" rx="2.4" ry="1.6" transform="rotate(-25 72 42)"/><ellipse cx="92" cy="34" rx="2.4" ry="1.6" transform="rotate(12 92 34)"/><ellipse cx="112" cy="40" rx="2.4" ry="1.6" transform="rotate(-18 112 40)"/><ellipse cx="130" cy="51" rx="2.4" ry="1.6" transform="rotate(30 130 51)"/><ellipse cx="57" cy="54" rx="2.4" ry="1.6" transform="rotate(18 57 54)"/></g>
+            <circle cx="23" cy="51" r="4" fill="#e58a51" opacity=".65"/><circle cx="166" cy="41" r="3" fill="#84ad70" opacity=".8"/><circle cx="163" cy="87" r="2.5" fill="#efbd4e"/>
+          </svg>
+          <div class="hero-badge"><span class="badge-icon" aria-hidden="true">↗</span><span><strong>Dados demonstrativos</strong><small>Base fictícia para a atividade</small></span></div>
+        </div>
+      </section>
+
+      <section class="panel filters-panel" aria-labelledby="filters-title">
+        <div class="section-heading filter-heading">
+          <div class="heading-with-icon"><span class="heading-icon" aria-hidden="true">☷</span><div><h2 id="filters-title">Filtros</h2><p>Refine os dados para explorar os resultados</p></div></div>
+          <div class="filter-actions">
+            <label class="button button-secondary import-button" for="csv-file"><span aria-hidden="true">↑</span> Importar CSV</label>
+            <input id="csv-file" class="visually-hidden" type="file" accept=".csv,text/csv" aria-label="Selecionar arquivo CSV para importar">
+            <button id="clear-filters" class="button button-quiet" type="button">Limpar filtros</button>
+          </div>
+        </div>
+        <div class="filter-grid">
+          <div class="filter-field date-field">
+            <label for="date-start">Data inicial</label>
+            <input id="date-start" type="date">
+          </div>
+          <div class="filter-field date-field">
+            <label for="date-end">Data final</label>
+            <input id="date-end" type="date">
+          </div>
+          <div class="filter-field">
+            <label for="category-filter">Categoria</label>
+            <select id="category-filter"><option value="">Todas as categorias</option></select>
+          </div>
+          <div class="filter-field">
+            <label for="region-filter">Região</label>
+            <select id="region-filter"><option value="">Todas as regiões</option></select>
+          </div>
+        </div>
+        <div id="dataset-note" class="dataset-note" role="status" aria-live="polite"></div>
+      </section>
+
+      <section class="metrics-grid" aria-label="Indicadores de vendas">
+        <article class="metric-card metric-revenue">
+          <div class="metric-top"><span class="metric-label">Faturamento total</span><span class="metric-icon" aria-hidden="true">R$</span></div>
+          <p id="metric-revenue" class="metric-value">—</p>
+          <p class="metric-foot">Soma do faturamento das vendas filtradas</p>
+        </article>
+        <article class="metric-card">
+          <div class="metric-top"><span class="metric-label">Vendas</span><span class="metric-icon icon-blue" aria-hidden="true">▤</span></div>
+          <p id="metric-sales" class="metric-value">—</p>
+          <p class="metric-foot">IDs de venda únicos no período</p>
+        </article>
+        <article class="metric-card">
+          <div class="metric-top"><span class="metric-label">Unidades vendidas</span><span class="metric-icon icon-mint" aria-hidden="true">▥</span></div>
+          <p id="metric-units" class="metric-value">—</p>
+          <p class="metric-foot">Soma das quantidades das linhas</p>
+        </article>
+        <article class="metric-card">
+          <div class="metric-top"><span class="metric-label">Ticket médio</span><span class="metric-icon icon-lilac" aria-hidden="true">⌁</span></div>
+          <p id="metric-average" class="metric-value">—</p>
+          <p class="metric-foot">Faturamento dividido por vendas únicas</p>
+        </article>
+      </section>
+
+      <section class="team-highlight" aria-labelledby="employee-title">
+        <div class="award-seal" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M15 27 12 43l12-6 12 6-3-16" fill="#f1bd47" stroke="#fff2cd" stroke-width="1.7" stroke-linejoin="round"/><circle cx="24" cy="20" r="13" fill="#fff4d6"/><path d="m24 11 2.6 5.4 6 .9-4.3 4.2 1 5.9-5.3-2.8-5.4 2.8 1-5.9-4.3-4.2 6-.9L24 11Z" fill="#d86b3e"/></svg>
+        </div>
+        <div class="team-copy">
+          <p class="team-eyebrow">GENTE QUE FAZ A CASA BRILHAR</p>
+          <h2 id="employee-title">Funcionário do mês</h2>
+          <p>Um espaço para reconhecer quem deixa cada pedido especial.</p>
+        </div>
+        <div class="employee-placeholder">
+          <span class="employee-avatar" aria-hidden="true">✦</span>
+          <span><strong>Destaque a preencher</strong><small>A base atual não inclui dados da equipe.</small></span>
+          <span class="coming-label">RECONHECIMENTO</span>
+        </div>
+      </section>
+
+      <section class="charts-grid" aria-label="Gráficos de vendas">
+        <article class="panel chart-panel chart-wide">
+          <div class="section-heading chart-heading"><div><h2>Faturamento ao longo do tempo</h2><p>Receita total agrupada por mês</p></div><span class="chart-unit">R$ por mês</span></div>
+          <div class="chart-wrap chart-wrap-wide"><canvas id="monthly-chart" role="img" aria-label="Gráfico de linhas do faturamento mensal em reais"></canvas></div>
+        </article>
+        <article class="panel chart-panel">
+          <div class="section-heading chart-heading"><div><h2>Faturamento por categoria</h2><p>Comparação da receita por tipo de produto</p></div><span class="chart-unit">R$</span></div>
+          <div class="chart-wrap"><canvas id="category-chart" role="img" aria-label="Gráfico de barras do faturamento por categoria em reais"></canvas></div>
+        </article>
+        <article class="panel chart-panel">
+          <div class="section-heading chart-heading"><div><h2>Faturamento por região</h2><p>Comparação da receita entre regiões</p></div><span class="chart-unit">R$</span></div>
+          <div class="chart-wrap"><canvas id="region-chart" role="img" aria-label="Gráfico de barras do faturamento por região em reais"></canvas></div>
+        </article>
+      </section>
+
+      <section class="panel table-panel" aria-labelledby="table-title">
+        <div class="section-heading table-heading">
+          <div><h2 id="table-title">Vendas detalhadas</h2><p id="record-count" aria-live="polite">—</p></div>
+          <div class="table-tools">
+            <label class="search-box"><span aria-hidden="true">⌕</span><span class="visually-hidden">Pesquisar vendas</span><input id="table-search" type="search" placeholder="Pesquisar vendas…" autocomplete="off"></label>
+            <button id="export-csv" class="button button-primary" type="button"><span aria-hidden="true">↓</span> Exportar CSV</button>
+          </div>
+        </div>
+        <div id="no-results" class="no-results" role="status" hidden><span class="empty-mark" aria-hidden="true">⌕</span><strong>Nenhuma venda encontrada</strong><p>Ajuste os filtros ou limpe a pesquisa para ver os registros.</p></div>
+        <div class="table-scroll">
+          <table>
+            <thead><tr>
+              <th scope="col" aria-sort="none"><button type="button" data-sort="id_venda">ID da venda <span class="sort-mark">↕</span></button></th>
+              <th scope="col" aria-sort="none"><button type="button" data-sort="data">Data <span class="sort-mark">↕</span></button></th>
+              <th scope="col" aria-sort="none"><button type="button" data-sort="produto">Produto <span class="sort-mark">↕</span></button></th>
+              <th scope="col" aria-sort="none"><button type="button" data-sort="categoria">Categoria <span class="sort-mark">↕</span></button></th>
+              <th scope="col" aria-sort="none"><button type="button" data-sort="regiao">Região <span class="sort-mark">↕</span></button></th>
+              <th scope="col" class="numeric" aria-sort="none"><button type="button" data-sort="quantidade">Unidades <span class="sort-mark">↕</span></button></th>
+              <th scope="col" class="numeric" aria-sort="none"><button type="button" data-sort="faturamento">Faturamento <span class="sort-mark">↕</span></button></th>
+            </tr></thead>
+            <tbody id="sales-table-body"></tbody>
+          </table>
+        </div>
+        <p class="table-hint">Selecione o título de uma coluna para ordenar. A pesquisa também atualiza os indicadores e gráficos.</p>
+      </section>
+
+      <footer class="page-footer"><span>Projeto didático · Análise de dados de vendas</span><span>Dados de demonstração para fins educacionais</span></footer>
+    </main>
+  </div>
+</body>
+</html>

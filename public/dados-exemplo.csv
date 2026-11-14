@@ -1,0 +1,201 @@
+﻿id_venda,data,produto,categoria,regiao,quantidade,preco_unitario
+V0143,2025-11-14,Onion rings,Acompanhamento,Sudeste,1,16.50
+V0184,2025-04-24,Onion rings,Acompanhamento,Centro-Oeste,5,16.50
+V0055,2025-07-30,Onion rings,Acompanhamento,Sudeste,5,16.50
+V0141,2025-09-04,Brownie,Sobremesa,Sul,3,12.00
+V0049,2025-01-19,Onion rings,Acompanhamento,Nordeste,3,16.50
+V0161,2025-05-26,Milkshake,Sobremesa,Sul,2,18.00
+V0144,2025-12-14,Onion rings,Acompanhamento,Norte,3,16.50
+V0051,2025-03-17,X-Burger,Lanche,Nordeste,5,27.90
+V0059,2025-11-29,Batata frita,Acompanhamento,Sul,2,14.00
+V0197,2025-05-06,Batata frita,Acompanhamento,Centro-Oeste,2,14.00
+V0125,2025-05-10,X-Burger,Lanche,Nordeste,5,27.90
+V0134,2025-02-01,Brownie,Sobremesa,Sudeste,2,12.00
+V0009,2025-09-16,Onion rings,Acompanhamento,Norte,2,16.50
+V0012,2025-12-03,Batata frita,Acompanhamento,Nordeste,1,14.00
+V0058,2025-10-26,Suco natural,Bebida,Norte,2,10.00
+V0080,2025-08-10,X-Bacon,Lanche,Sudeste,1,32.90
+V0086,2025-02-15,Refrigerante,Bebida,Sudeste,3,7.00
+V0022,2025-10-16,X-Bacon,Lanche,Sul,4,32.90
+V0042,2025-06-19,X-Bacon,Lanche,Sudeste,2,32.90
+V0015,2025-03-06,Veggie,Lanche,Sudeste,3,29.50
+V0008,2025-08-07,Refrigerante,Bebida,Nordeste,4,7.00
+V0167,2025-11-06,Veggie,Lanche,Centro-Oeste,5,29.50
+V0157,2025-01-30,Onion rings,Acompanhamento,Centro-Oeste,3,16.50
+V0038,2025-02-11,Veggie,Lanche,Norte,2,29.50
+V0107,2025-11-09,Refrigerante,Bebida,Nordeste,4,7.00
+V0168,2025-12-04,Veggie,Lanche,Norte,3,29.50
+V0185,2025-05-25,X-Bacon,Lanche,Nordeste,2,32.90
+V0156,2025-12-16,X-Bacon,Lanche,Sul,1,32.90
+V0099,2025-03-15,Veggie,Lanche,Norte,2,29.50
+V0073,2025-01-28,Batata frita,Acompanhamento,Norte,1,14.00
+V0174,2025-06-21,X-Bacon,Lanche,Sul,2,32.90
+V0119,2025-11-30,Veggie,Lanche,Sul,4,29.50
+V0083,2025-11-11,Batata frita,Acompanhamento,Sudeste,2,14.00
+V0158,2025-02-13,Refrigerante,Bebida,Sul,1,7.00
+V0117,2025-09-26,Suco natural,Bebida,Nordeste,2,10.00
+V0019,2025-07-20,Veggie,Lanche,Centro-Oeste,5,29.50
+V0091,2025-07-16,Suco natural,Bebida,Nordeste,1,10.00
+V0191,2025-11-01,Batata frita,Acompanhamento,Sul,2,14.00
+V0034,2025-10-24,Veggie,Lanche,Sul,5,29.50
+V0164,2025-08-19,Suco natural,Bebida,Sudeste,1,10.00
+V0010,2025-10-19,Refrigerante,Bebida,Nordeste,4,7.00
+V0126,2025-06-12,Batata frita,Acompanhamento,Norte,1,14.00
+V0139,2025-07-24,Onion rings,Acompanhamento,Nordeste,5,16.50
+V0113,2025-05-13,Batata frita,Acompanhamento,Nordeste,2,14.00
+V0061,2025-01-02,X-Bacon,Lanche,Sudeste,2,32.90
+V0093,2025-09-12,Onion rings,Acompanhamento,Norte,2,16.50
+V0017,2025-05-02,Veggie,Lanche,Sudeste,4,29.50
+V0110,2025-02-06,Milkshake,Sobremesa,Norte,3,18.00
+V0063,2025-03-07,Refrigerante,Bebida,Norte,2,7.00
+V0187,2025-07-21,Batata frita,Acompanhamento,Sul,3,14.00
+V0088,2025-04-22,Refrigerante,Bebida,Sudeste,4,7.00
+V0016,2025-04-27,Veggie,Lanche,Nordeste,2,29.50
+V0109,2025-01-28,Veggie,Lanche,Centro-Oeste,4,29.50
+V0133,2025-01-10,Onion rings,Acompanhamento,Sudeste,5,16.50
+V0127,2025-07-10,Milkshake,Sobremesa,Nordeste,4,18.00
+V0118,2025-10-04,Brownie,Sobremesa,Nordeste,1,12.00
+V0026,2025-02-22,X-Burger,Lanche,Sudeste,3,27.90
+V0005,2025-05-27,Brownie,Sobremesa,Sudeste,4,12.00
+V0068,2025-08-16,Milkshake,Sobremesa,Norte,1,18.00
+V0155,2025-11-24,Milkshake,Sobremesa,Centro-Oeste,3,18.00
+V0138,2025-06-15,X-Burger,Lanche,Norte,4,27.90
+V0078,2025-06-17,Brownie,Sobremesa,Sudeste,3,12.00
+V0145,2025-01-17,Refrigerante,Bebida,Sul,3,7.00
+V0013,2025-01-12,Brownie,Sobremesa,Nordeste,3,12.00
+V0011,2025-11-21,Suco natural,Bebida,Nordeste,5,10.00
+V0031,2025-07-28,Veggie,Lanche,Sudeste,4,29.50
+V0069,2025-09-14,Onion rings,Acompanhamento,Centro-Oeste,1,16.50
+V0147,2025-03-04,Suco natural,Bebida,Sudeste,2,10.00
+V0070,2025-10-15,Refrigerante,Bebida,Sudeste,3,7.00
+V0169,2025-01-30,Batata frita,Acompanhamento,Sudeste,3,14.00
+V0172,2025-04-13,Onion rings,Acompanhamento,Centro-Oeste,4,16.50
+V0066,2025-06-21,Onion rings,Acompanhamento,Centro-Oeste,2,16.50
+V0186,2025-06-25,X-Burger,Lanche,Norte,2,27.90
+V0089,2025-05-28,Batata frita,Acompanhamento,Norte,1,14.00
+V0136,2025-04-27,Brownie,Sobremesa,Centro-Oeste,5,12.00
+V0096,2025-12-05,Suco natural,Bebida,Centro-Oeste,5,10.00
+V0047,2025-11-06,Onion rings,Acompanhamento,Nordeste,1,16.50
+V0045,2025-09-23,Brownie,Sobremesa,Centro-Oeste,3,12.00
+V0030,2025-06-25,X-Burger,Lanche,Norte,4,27.90
+V0027,2025-03-07,Suco natural,Bebida,Sudeste,2,10.00
+V0006,2025-06-23,Onion rings,Acompanhamento,Nordeste,2,16.50
+V0053,2025-05-09,Onion rings,Acompanhamento,Centro-Oeste,4,16.50
+V0020,2025-08-12,Refrigerante,Bebida,Sul,2,7.00
+V0050,2025-02-02,Onion rings,Acompanhamento,Centro-Oeste,4,16.50
+V0090,2025-06-17,Veggie,Lanche,Norte,3,29.50
+V0129,2025-09-12,Milkshake,Sobremesa,Sudeste,4,18.00
+V0075,2025-03-17,Suco natural,Bebida,Nordeste,1,10.00
+V0178,2025-10-19,X-Bacon,Lanche,Nordeste,3,32.90
+V0173,2025-05-27,Batata frita,Acompanhamento,Sudeste,2,14.00
+V0181,2025-01-28,Brownie,Sobremesa,Nordeste,4,12.00
+V0154,2025-10-21,Refrigerante,Bebida,Nordeste,2,7.00
+V0056,2025-08-29,Brownie,Sobremesa,Sudeste,4,12.00
+V0039,2025-03-28,Onion rings,Acompanhamento,Norte,1,16.50
+V0124,2025-04-26,Brownie,Sobremesa,Centro-Oeste,2,12.00
+V0021,2025-09-16,Milkshake,Sobremesa,Nordeste,3,18.00
+V0111,2025-03-04,X-Burger,Lanche,Norte,2,27.90
+V0190,2025-10-13,X-Burger,Lanche,Sudeste,2,27.90
+V0166,2025-10-26,Milkshake,Sobremesa,Sudeste,4,18.00
+V0092,2025-08-29,X-Bacon,Lanche,Norte,3,32.90
+V0105,2025-09-29,Refrigerante,Bebida,Centro-Oeste,5,7.00
+V0077,2025-05-29,Brownie,Sobremesa,Sul,4,12.00
+V0130,2025-10-05,Veggie,Lanche,Sul,3,29.50
+V0199,2025-07-16,Refrigerante,Bebida,Sul,5,7.00
+V0095,2025-11-02,Veggie,Lanche,Norte,5,29.50
+V0079,2025-07-25,X-Bacon,Lanche,Norte,2,32.90
+V0116,2025-08-28,X-Bacon,Lanche,Nordeste,3,32.90
+V0163,2025-07-15,Veggie,Lanche,Sudeste,3,29.50
+V0189,2025-09-22,Milkshake,Sobremesa,Sul,4,18.00
+V0115,2025-07-09,X-Bacon,Lanche,Sudeste,5,32.90
+V0183,2025-03-09,Veggie,Lanche,Nordeste,1,29.50
+V0054,2025-06-21,Suco natural,Bebida,Centro-Oeste,2,10.00
+V0064,2025-04-04,Milkshake,Sobremesa,Norte,2,18.00
+V0121,2025-01-31,Refrigerante,Bebida,Sul,5,7.00
+V0044,2025-08-24,Onion rings,Acompanhamento,Sul,1,16.50
+V0132,2025-12-15,Milkshake,Sobremesa,Sul,4,18.00
+V0194,2025-02-16,Refrigerante,Bebida,Nordeste,4,7.00
+V0148,2025-04-11,Brownie,Sobremesa,Sul,4,12.00
+V0060,2025-12-15,Suco natural,Bebida,Norte,5,10.00
+V0135,2025-03-10,Brownie,Sobremesa,Sudeste,4,12.00
+V0025,2025-01-16,Milkshake,Sobremesa,Sul,2,18.00
+V0188,2025-08-21,X-Burger,Lanche,Sudeste,1,27.90
+V0142,2025-10-14,Suco natural,Bebida,Sudeste,1,10.00
+V0028,2025-04-29,Brownie,Sobremesa,Centro-Oeste,5,12.00
+V0043,2025-07-12,Onion rings,Acompanhamento,Centro-Oeste,1,16.50
+V0037,2025-01-10,Refrigerante,Bebida,Norte,4,7.00
+V0046,2025-10-06,Veggie,Lanche,Nordeste,4,29.50
+V0195,2025-03-20,Milkshake,Sobremesa,Sul,2,18.00
+V0001,2025-01-03,Batata frita,Acompanhamento,Sul,5,14.00
+V0084,2025-12-29,Refrigerante,Bebida,Sul,2,7.00
+V0192,2025-12-19,Refrigerante,Bebida,Nordeste,1,7.00
+V0029,2025-05-27,Refrigerante,Bebida,Centro-Oeste,2,7.00
+V0072,2025-12-05,Veggie,Lanche,Centro-Oeste,1,29.50
+V0198,2025-06-14,Batata frita,Acompanhamento,Nordeste,2,14.00
+V0180,2025-12-03,Onion rings,Acompanhamento,Sul,3,16.50
+V0104,2025-08-22,Milkshake,Sobremesa,Sudeste,1,18.00
+V0149,2025-05-24,Milkshake,Sobremesa,Norte,2,18.00
+V0081,2025-09-15,X-Bacon,Lanche,Sudeste,1,32.90
+V0137,2025-05-06,Batata frita,Acompanhamento,Sul,5,14.00
+V0193,2025-01-08,Milkshake,Sobremesa,Sudeste,5,18.00
+V0140,2025-08-15,Suco natural,Bebida,Sudeste,1,10.00
+V0094,2025-10-22,Brownie,Sobremesa,Centro-Oeste,4,12.00
+V0106,2025-10-21,Suco natural,Bebida,Nordeste,5,10.00
+V0170,2025-02-12,Milkshake,Sobremesa,Norte,3,18.00
+V0159,2025-03-05,Batata frita,Acompanhamento,Nordeste,3,14.00
+V0101,2025-05-14,Veggie,Lanche,Norte,2,29.50
+V0102,2025-06-02,X-Bacon,Lanche,Sul,5,32.90
+V0179,2025-11-20,X-Burger,Lanche,Centro-Oeste,1,27.90
+V0182,2025-02-19,Refrigerante,Bebida,Centro-Oeste,2,7.00
+V0057,2025-09-19,Veggie,Lanche,Sudeste,4,29.50
+V0098,2025-02-20,Milkshake,Sobremesa,Nordeste,1,18.00
+V0040,2025-04-25,Milkshake,Sobremesa,Sudeste,3,18.00
+V0023,2025-11-08,Milkshake,Sobremesa,Sul,3,18.00
+V0151,2025-07-16,Refrigerante,Bebida,Norte,3,7.00
+V0200,2025-08-06,Refrigerante,Bebida,Nordeste,1,7.00
+V0103,2025-07-15,Suco natural,Bebida,Nordeste,2,10.00
+V0087,2025-03-21,Onion rings,Acompanhamento,Nordeste,5,16.50
+V0122,2025-02-12,Refrigerante,Bebida,Sul,1,7.00
+V0032,2025-08-04,X-Bacon,Lanche,Nordeste,4,32.90
+V0112,2025-04-27,X-Bacon,Lanche,Centro-Oeste,5,32.90
+V0048,2025-12-26,Suco natural,Bebida,Norte,1,10.00
+V0160,2025-04-02,Brownie,Sobremesa,Sudeste,3,12.00
+V0114,2025-06-16,Onion rings,Acompanhamento,Centro-Oeste,5,16.50
+V0152,2025-08-28,Refrigerante,Bebida,Sul,1,7.00
+V0146,2025-02-21,Suco natural,Bebida,Norte,1,10.00
+V0065,2025-05-18,Onion rings,Acompanhamento,Norte,3,16.50
+V0074,2025-02-25,X-Bacon,Lanche,Centro-Oeste,1,32.90
+V0062,2025-02-15,X-Bacon,Lanche,Sul,3,32.90
+V0171,2025-03-27,X-Bacon,Lanche,Sudeste,5,32.90
+V0004,2025-04-24,Veggie,Lanche,Norte,4,29.50
+V0067,2025-07-25,Suco natural,Bebida,Norte,1,10.00
+V0035,2025-11-28,Onion rings,Acompanhamento,Centro-Oeste,4,16.50
+V0033,2025-09-28,Veggie,Lanche,Sul,2,29.50
+V0071,2025-11-29,Milkshake,Sobremesa,Sul,4,18.00
+V0003,2025-03-01,Milkshake,Sobremesa,Nordeste,4,18.00
+V0052,2025-04-02,Refrigerante,Bebida,Centro-Oeste,4,7.00
+V0176,2025-08-20,Brownie,Sobremesa,Sudeste,3,12.00
+V0085,2025-01-18,Batata frita,Acompanhamento,Sul,3,14.00
+V0007,2025-07-15,Veggie,Lanche,Sul,5,29.50
+V0120,2025-12-12,X-Bacon,Lanche,Sul,4,32.90
+V0002,2025-02-16,Brownie,Sobremesa,Nordeste,4,12.00
+V0018,2025-06-17,Suco natural,Bebida,Centro-Oeste,4,10.00
+V0024,2025-12-09,Batata frita,Acompanhamento,Sul,5,14.00
+V0175,2025-07-07,Brownie,Sobremesa,Nordeste,3,12.00
+V0196,2025-04-13,Batata frita,Acompanhamento,Norte,2,14.00
+V0177,2025-09-11,Milkshake,Sobremesa,Nordeste,2,18.00
+V0131,2025-11-09,X-Burger,Lanche,Centro-Oeste,5,27.90
+V0100,2025-04-11,Milkshake,Sobremesa,Norte,5,18.00
+V0150,2025-06-13,Batata frita,Acompanhamento,Sudeste,3,14.00
+V0128,2025-08-21,Refrigerante,Bebida,Nordeste,2,7.00
+V0014,2025-02-22,Veggie,Lanche,Sudeste,3,29.50
+V0082,2025-10-15,Milkshake,Sobremesa,Centro-Oeste,5,18.00
+V0153,2025-09-11,Brownie,Sobremesa,Norte,4,12.00
+V0036,2025-12-30,X-Bacon,Lanche,Norte,1,32.90
+V0123,2025-03-07,Milkshake,Sobremesa,Norte,1,18.00
+V0165,2025-09-01,Brownie,Sobremesa,Norte,2,12.00
+V0076,2025-04-07,Suco natural,Bebida,Centro-Oeste,1,10.00
+V0097,2025-01-14,Onion rings,Acompanhamento,Sudeste,5,16.50
+V0041,2025-05-21,Milkshake,Sobremesa,Centro-Oeste,5,18.00
+V0108,2025-12-25,Brownie,Sobremesa,Norte,4,12.00
+V0162,2025-06-29,Onion rings,Acompanhamento,Norte,3,16.50
